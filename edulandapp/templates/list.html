@@ -1,0 +1,31 @@
+
+ {% extends "index.html" %}
+
+{% block services %}
+
+
+
+ <!-- Services Section -->
+ <div id="services" class="services-card container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    
+    <div class="row">
+        {%for list in listview %}
+      <div class="col-md-4">
+        
+        <div class="card">
+          <img src="{{list.Description}}" class="card-img-top" alt="Web Development">
+          <div class="card-body">
+            <h5 class="card-title">Name:{{list.Name}}</h5>
+            <p class="card-text">Discription:{{list.Number}}</p>
+            <a href="{% url "edit" list.id %}">edit</a>/<a href="{% url "Delete" list.id %}">Delete</a>
+          </div>
+          
+        </div>
+        
+      </div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
