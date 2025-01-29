@@ -9,6 +9,11 @@ def print(request):
 def load(request):
     return render(request,'index.html')
 
+def courses(request):
+    return render(request,'courses.html')
+    
+def samp(request):
+    return render(request,'samp.html')
 def list(request):
     listview=Mainpage.objects.all()
     return render(request,'list.html',{'listview':listview})

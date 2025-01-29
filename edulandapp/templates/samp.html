@@ -1,0 +1,231 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   SaasCodes - Your Gateway to a Brighter Future
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root {
+     --primary-color: #1a202c;
+     --secondary-color: #2d3748;
+     --accent-color: #4a5568;
+     --text-color: #edf2f7;
+     --bg-color: #f7fafc;
+   }
+  </style>
+ </head>
+ <body class="font-roboto bg-var(--bg-color)">
+  <!-- Navbar -->
+  <nav class="bg-var(--primary-color) shadow-md">
+   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-var(--text-color)" href="#">
+     SaasCodes
+    </a>
+    <div class="hidden md:flex space-x-6">
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#about">
+      About Us
+     </a>
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#programmes">
+      Programmes
+     </a>
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#contact">
+      Contact Us
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-var(--text-color) focus:outline-none" id="menu-button">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden" id="mobile-menu">
+    <a class="block text-var(--text-color) hover:text-var(--accent-color) transition duration-300 py-2 px-4" href="#about">
+     About Us
+    </a>
+    <a class="block text-var(--text-color) hover:text-var(--accent-color) transition duration-300 py-2 px-4" href="#programmes">
+     Programmes
+    </a>
+    <a class="block text-var(--text-color) hover:text-var(--accent-color) transition duration-300 py-2 px-4" href="#contact">
+     Contact Us
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-var(--primary-color) text-var(--text-color) py-20">
+   <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl font-bold mb-4">
+     Welcome to SaasCodes
+    </h1>
+    <p class="text-lg mb-8">
+     Your gateway to a brighter future through education
+    </p>
+    <a class="bg-var(--accent-color) text-var(--text-color) px-8 py-3 rounded-full font-bold shadow-lg hover:bg-var(--secondary-color) transition duration-300" href="#programmes">
+     Explore Programmes
+    </a>
+   </div>
+  </section>
+  <!-- Programmes Section -->
+  <section class="py-20" id="programmes">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-var(--primary-color)">
+     Our Programmes
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <a class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300" href="{% url 'courses' %}">
+      <img alt="Icon representing all programmes" class="mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/OjxWfdjKLVUVbqOy4HpumTEzswtxqpheG6BkEO3MqV2P7j5TA.jpg" width="100"/>
+      <h3 class="text-2xl font-bold mb-2 text-var(--primary-color)">
+       All Programmes
+      </h3>
+      <p class="text-var(--accent-color)">
+       Explore all the educational programmes we offer.
+      </p>
+     </a>
+     <a class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300" href="https://example.com/assessments">
+      <img alt="Icon representing assessments" class="mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/f26jRYva9GVUBCbIBw6BHjKq7vrzecuyf00gRUgeh271sPmPB.jpg" width="100"/>
+      <h3 class="text-2xl font-bold mb-2 text-var(--primary-color)">
+       Assessments
+      </h3>
+      <p class="text-var(--accent-color)">
+       Take assessments to evaluate your knowledge and skills.
+      </p>
+     </a>
+     <a class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300" href="https://example.com/jobs">
+      <img alt="Icon representing job opportunities" class="mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/pqMp0QOLhr7PE9CW2UWvj781DaAJ8FQcDOPMjy1P7vyxex8JA.jpg" width="100"/>
+      <h3 class="text-2xl font-bold mb-2 text-var(--primary-color)">
+       Jobs
+      </h3>
+      <p class="text-var(--accent-color)">
+       Find job opportunities that match your skills and interests.
+      </p>
+     </a>
+     <a class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300" href="https://example.com/internships">
+      <img alt="Icon representing internships" class="mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/4NxvvznXPupWBJ3xURRju6WvF0eiM8CK7oQ0bVmd4FVl9x8JA.jpg" width="100"/>
+      <h3 class="text-2xl font-bold mb-2 text-var(--primary-color)">
+       Internships
+      </h3>
+      <p class="text-var(--accent-color)">
+       Gain practical experience through internships.
+      </p>
+     </a>
+     <a class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300" href="https://example.com/general-knowledge">
+      <img alt="Icon representing general knowledge" class="mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/JvFSXwRIJ57IFBiPA8CZsLMbog9Btq3IYJ7n4SOCLtSxex8JA.jpg" width="100"/>
+      <h3 class="text-2xl font-bold mb-2 text-var(--primary-color)">
+       General Knowledge
+      </h3>
+      <p class="text-var(--accent-color)">
+       Enhance your general knowledge with our curated content.
+      </p>
+     </a>
+     <a class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300" href="https://example.com/ai-chat">
+      <img alt="Icon representing AI chat" class="mx-auto mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/puWykfC6t9ylf0fAyyTk6dLEbq8iKlEM12KFDbUyPZFY2HznA.jpg" width="100"/>
+      <h3 class="text-2xl font-bold mb-2 text-var(--primary-color)">
+       AI Chat
+      </h3>
+      <p class="text-var(--accent-color)">
+       Interact with our AI chat for personalized learning assistance.
+      </p>
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- About Us Section -->
+  <section class="bg-var(--bg-color) py-20" id="about">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-var(--primary-color)">
+     About Us
+    </h2>
+    <div class="flex flex-col md:flex-row items-center">
+     <img alt="Image representing the team or mission of the platform" class="w-full md:w-1/2 rounded-lg shadow-lg mb-8 md:mb-0 md:mr-8" height="300" src="https://storage.googleapis.com/a1aa/image/XI6U0ey08gwEH6nROsFplcEReVe1UKc6l0V4dhz4hSbT2HznA.jpg" width="400"/>
+     <div class="md:w-1/2">
+      <p class="text-var(--accent-color) mb-4">
+       SaasCodes is dedicated to providing high-quality education and career opportunities to learners around the world. Our mission is to empower individuals through accessible and affordable education, helping them achieve their personal and professional goals.
+      </p>
+      <p class="text-var(--accent-color) mb-4">
+       We offer a wide range of programmes, assessments, job opportunities, and internships to support our learners at every stage of their journey.
+      </p>
+      <a class="bg-var(--primary-color) text-var(--text-color) px-6 py-3 rounded-full font-bold shadow-lg hover:bg-var(--secondary-color) transition duration-300 inline-block" href="#contact">
+       Join Our Community
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Us Section -->
+  <section class="py-20" id="contact">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-var(--primary-color)">
+     Contact Us
+    </h2>
+    <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
+     <form>
+      <div class="mb-4">
+       <label class="block text-var(--primary-color) font-bold mb-2" for="name">
+        Name
+       </label>
+       <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-var(--primary-color)" id="name" placeholder="Your Name" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-var(--primary-color) font-bold mb-2" for="email">
+        Email
+       </label>
+       <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-var(--primary-color)" id="email" placeholder="Your Email" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-var(--primary-color) font-bold mb-2" for="message">
+        Message
+       </label>
+       <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-var(--primary-color)" id="message" placeholder="Your Message" rows="4">
+       </textarea>
+      </div>
+      <button class="bg-var(--primary-color) text-var(--text-color) px-6 py-3 rounded-full font-bold shadow-lg hover:bg-var(--secondary-color) transition duration-300" type="submit">
+       Send Message
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-var(--primary-color) text-var(--text-color) py-6">
+   <div class="container mx-auto px-4 text-center">
+    <hr class="border-var(--accent-color) mb-4"/>
+    <p>
+     © 2023 SaasCodes. All rights reserved.
+    </p>
+    <div class="mt-4 space-x-4">
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a class="text-var(--text-color) hover:text-var(--accent-color) transition duration-300" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-button').addEventListener('click', function() {
+     var menu = document.getElementById('mobile-menu');
+     if (menu.classList.contains('hidden')) {
+       menu.classList.remove('hidden');
+     } else {
+       menu.classList.add('hidden');
+     }
+   });
+  </script>
+ </body>
+</html>
